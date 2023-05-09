@@ -1,0 +1,6 @@
+@font-face {
+    font-family: BYekan;
+    src: url("../fonts/iranYekan/Yekan.woff");
+  }
+
+  body{font-family: BYekan;}

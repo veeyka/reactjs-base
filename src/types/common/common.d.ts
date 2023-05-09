@@ -1,0 +1,1 @@
+type CityType = { name: string; cityId: string };
