@@ -9,8 +9,9 @@ console.log("about -- outsize")
 const AboutUs :React.FC<pageProps>  = ():JSX.Element=>{
     console.log("about -- in")
     const {id} = useParams();
-    document.title ="Welcome | here is your page title to display";
-    (document.getElementsByTagName("META")[4] as HTMLMetaElement).content="eeee";
+    console.log(window.location.search)
+    // document.title ="Welcome | here is your page title to display";
+    // (document.getElementsByTagName("META")[4] as HTMLMetaElement).content="eeee";
 
     return (
         <div>

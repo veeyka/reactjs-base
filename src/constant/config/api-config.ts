@@ -1,9 +1,8 @@
 interface ApiConfig {
 	timeout: number;
 	url: {
-		grpc: string;
-		sign: string;
-		cities: string;
+		albums: string;
+		
 	};
 	errorMessages: {
 		authorization: string;
@@ -19,9 +18,8 @@ interface ApiConfig {
 const apiConfig: ApiConfig = {
 	timeout: 15000, // Todo: make it 15000
 	url: {
-		grpc: "/gateway/api/v1/base/grpc/",
-		sign: "/gateway/api/v1/base/sign/",
-		cities: "/gateway/api/v1/tele/cities/",
+		albums: "/albums",
+		
 	},
 	errorMessages: {
 		authorization: " خطای دسترسی به سرویس ",

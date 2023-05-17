@@ -1,12 +1,7 @@
 const WebStorageKeys: Record<keyof WebStorage, string> = {
-	aTicketReserveID: "aTicketReserveID",
-	aTicketToken: "aTicketToken",
-	aTicketLang: "aTicketLang",
-	aTicketUserCity: "aTicketUserCity",
-	// aTicketIsSelectedCity: "aTicketIsSelectedCity",
-	// aTicketCities: "aTicketCities",
-	// aTicketTicketId: "aTicketTicketId",
-	// aTicketDefaultCityInfo: "aTicketDefaultCityInfo",
+
+	siteToken: "siteToken",
+
 };
 
 export default WebStorageKeys;

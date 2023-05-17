@@ -11,7 +11,7 @@ class Storage {
 	constructor(storage: TargetStorage) {
 		this.storage = window[storage];
 	}
-
+	
 	get<T = string>(key: Keys): T | null {
 		try {
 			const value = this.storage.getItem(String(key));
@@ -51,7 +51,7 @@ class Storage {
 		try {
 			const isPrimitive = this.checkPrimitive(value);
 			const updatedValue = isPrimitive ? value : JSON.stringify(value);
-			this.storage.setItem(String(String(key)), updatedValue);
+			this.storage.setItem(String(key), updatedValue);
 		} catch (e) {
 			console.error("err in ls set", e);
 		}
