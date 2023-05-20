@@ -1,50 +1,21 @@
 "use strict"
 import React, { useCallback, useRef } from 'react';
-import { CheckBox } from '../components';
-import { useQuery, useQueryClient,useMutation, } from 'react-query';
-import axios from 'axios';
-import { useSelector ,useDispatch} from 'react-redux';
-import { Dispatch } from 'react';
-import { getAllArticlesAction } from '../redux/actions/articleActions';
-import { RootStates } from '../redux/reducers';
-import { useAppDispatch } from '../redux/hooks';
-import TextInput from '../components/unites/TextInput/TextInput';
-import { time } from 'console';
-import Button from './Button';
+
+import Loading from '../components/unites/Loading/Loading';
 import { HttpClinet } from '../service';
-import { HomeResponse } from '../types/models/home-posts';
-import useGetHomeAlbums from '../api/use-get-home-albums';
-import { ls } from '../tools';
-import { Link } from 'react-router-dom';
+import { makeUuid } from '../util';
 
 
-const Home = ()=>{
-  // const httpClient = new HttpClinet();
-  // const handleHttp = async ()=>{
-  //   const res = await httpClient.get<HomeResponse>("posts")
-  //   // const res = await axios.get("https://jsonplaceholder.typicode.com/posts")
-  //   console.log(res);
-  // }
-  // handleHttp()
-  // const {status, data, isLoading,refetch } = useGetHomeAlbums();
-  // console.log(data,status)
-  // console.log(isLoading,refetch)
 
-  const doIt = ()=>{
-    // refetch()
-  }
+const Home = (props:any)=>{
+  const {children} = props;
+
+  console.log(makeUuid())
+
 
   return (
       <>
-        <div className='w-full h-96 mt-20 flex flex-col '>
-            <button onClick={doIt}>sda</button>
-            <br />
-            <a href='/contactus'>contact us11</a><br />
-
-            <br />
-
-            <Link to="/contactus">sddsdsdsdsdsd</Link>
-        </div>
+        
       </>
     )
   }

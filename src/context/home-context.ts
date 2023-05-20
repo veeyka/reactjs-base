@@ -1,8 +1,8 @@
 // import { Context, createContext } from "react";
 
 // type HomePage = {
-// 	filmList?: FilmItem[];
-// 	searchMovie?: (name: string) => void;
+// 	filmList?: IAlbum[];
+// 	searchAlbums?: (name: string) => void;
 // };
 
 // const HomeContext: Context<HomePage | undefined> = createContext(undefined);

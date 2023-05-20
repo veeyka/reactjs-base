@@ -13,7 +13,7 @@ export default function useReactQuery<R>(...payload: QueryPayload<R>): UseQueryR
 	const [queryKey, fetchData, options] = payload;
 
 	return useQuery<R, Error>(queryKey, fetchData, {
-		staleTime: 31_556_952_000, // cache time
+		staleTime: 31_556_952_000,
 		retry: false,
 		...options,
 	});
